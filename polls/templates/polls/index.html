@@ -1,0 +1,50 @@
+{# CA1: CRUD Application #}
+
+{% extends 'base.html' %}
+
+{% block title %}Polls Home{% endblock %}
+
+{% block content %}
+    {% load static %}
+    {# loads project's general style sheet #}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {# loads polls app's specific style sheet #}
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+    {# loads polls app's specific javascript #}
+    <script src="{% static 'polls/script.js' %}"></script>
+
+    <h1>Welcome to DMC's Polls</h1>
+    <br><br>
+    <h3>Choose one of the currently open polls below:</h3>
+    <br>
+    {# if there are any questions in the database, display them #}
+    {% if question_list %}
+        <div class="mb-3 form-input-field">
+            {# listSearch function enables filtering the question list by keywords #}
+            <input id="filter" onkeyup="listSearch()" class="form-control" type="search" placeholder="Search polls"
+                   aria-label="Search">
+        </div>
+        <ul id="list-to-search">
+            {# displays the first 5 questions of the list #}
+            {% for question in question_list|slice:"0:5" %}
+                {# text from Question model instance #}
+                {# passes id from Question model instance to view associated with the name "detail" #}
+                <li class="visible"><h5><a href="{% url 'polls:detail' question.id %}">{{ question.text }}</a>
+                </h5></li>
+            {% endfor %}
+            {# hides all other questions of the list #}
+            {% for question in question_list|slice:"5:" %}
+                {# text from Question model instance #}
+                {# passes id from Question model instance to view associated with the name "detail" #}
+                <li class="hidden"><h5><a
+                        href="{% url 'polls:detail' question.id %}">{{ question.text }}</a></h5></li>
+            {% endfor %}
+        </ul>
+    {% else %} {# if there are no questions in the database #}
+        <h5>No polls are available.</h5>
+    {% endif %}
+    <br>
+    <h5>Didn't find the poll you wanted?</h5>
+    {# link to view associated with the name "create" #}
+    <a href="{% url 'polls:create' %}" class="m-2 btn btn-primary" role="button">Create a new one</a>
+{% endblock %}

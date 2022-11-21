@@ -1,0 +1,61 @@
+{# CA1: CRUD Application #}
+
+{% extends "base.html" %}
+
+{% block title %}Poll Results{% endblock %}
+
+{% block content %}
+    {% load static %}
+    {# loads polls app's specific style sheet #}
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
+    {# text from Question model instance #}
+    <h1>{{ question.text }}</h1>
+    <br><br>
+    {# renders every Choice model instance associated with current Question model instance #}
+    {# in descending order of votes #}
+    {% for choice in question.choice_set.all|dictsortreversed:"votes" %}
+        <div class="card mb-3 card-landscape">
+            <div class="row g-0">
+                <div class="col-md-4 column-content">
+                    {# image from Choice model instance #}
+                    <img src="{{ choice.image }}" class="img-fluid rounded-start card-landscape-image" alt="...">
+                </div>
+                <div class="col-md-6 column-content">
+                    <div class="card-body">
+                        {# title from Choice model instance #}
+                        <h6 class="card-title text-center"><b>{{ choice.title }}</b></h6>
+                        {# artist from Choice model instance #}
+                        <p class="card-title text-center">{{ choice.artist }}</p>
+                        {# country, year and genres from Choice model instance #}
+                        <p class="card-text text-center small-text">{{ choice.country }}, {{ choice.year }}
+                            | {{ choice.genres }}</p>
+                        {# url from Choice model instance #}
+                        <p class="card-text text-center small-text data-source-text"><a href="{{ choice.url }}"
+                                                                                        target="_blank">Data
+                            provided by
+                            Discogs.</a></p>
+                        {# votes from Choice model instance #}
+                        <h6>Votes: {{ choice.votes }}</h6>
+                    </div>
+                </div>
+                <div class="col-md-2 fs-1 bg-warning rounded-end column-content">
+                    {# displays ordinal numbers as a rank #}
+                    {% if forloop.counter == 1 %}
+                        {{ forloop.counter }}st
+                    {% elif forloop.counter == 2 %}
+                        {{ forloop.counter }}nd
+                    {% elif forloop.counter == 3 %}
+                        {{ forloop.counter }}rd
+                    {% else %}
+                        {{ forloop.counter }}th
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    {# passes id from Question model instance to view associated with the name "detail" #}
+    <a role="button" class="btn btn-primary mt-5 m-2" href="{% url 'polls:detail' question.id %}">Vote again</a>
+    {# link to view associated with the name "index" #}
+    <a role="button" class="btn btn-primary mt-5 m-2" href="{% url 'polls:index' %}">Back to Polls</a>
+{% endblock %}

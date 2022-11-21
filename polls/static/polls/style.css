@@ -1,0 +1,41 @@
+/* CA1: CRUD Application */
+
+.form-select-field {
+    margin: 16px 0;
+}
+
+.card-portrait {
+    width: 200px;
+}
+
+.card-portrait-image {
+    width: 200px;
+    height: 200px;
+}
+
+.card-landscape {
+    max-width: 650px;
+    margin: auto;
+}
+
+.card-landscape-image {
+    height: 100%;
+}
+
+.small-text {
+    font-size: small;
+}
+
+.data-source-text {
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+.column-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

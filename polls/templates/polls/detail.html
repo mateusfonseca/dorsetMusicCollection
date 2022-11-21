@@ -1,0 +1,57 @@
+{# CA1: CRUD Application #}
+
+{% extends "base.html" %}
+
+{% block title %}Poll Details{% endblock %}
+
+{% block content %}
+    {% load static %}
+    {# loads polls app's specific style sheet #}
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
+    {# text from Question model instance #}
+    <h1>{{ question.text }}</h1>
+    <br><br>
+    {# sends a POST request with id from Question model instance to view associated with the name "vote" #}
+    <form action="{% url 'polls:vote' question.id %}" method="post">
+        {% csrf_token %}
+        {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+        <div class="container text-center d-grid justify-content-center">
+            <div class="row gx-1">
+                {# renders every Choice model instance associated with current Question model instance #}
+                {% for choice in question.choice_set.all %}
+                    <div class="col gy-2">
+                        <div class="card card-portrait">
+                            {# image from Choice model instance #}
+                            <img src="{{ choice.image }}" class="card-img-top card-portrait-image" alt="...">
+                            <div class="card-body">
+                                {# title from Choice model instance #}
+                                <h6 class="card-title text-center"><b>{{ choice.title }}</b></h6>
+                                {# artist from Choice model instance #}
+                                <p class="card-title text-center">{{ choice.artist }}</p>
+                                {# country, year and genres from Choice model instance #}
+                                <p class="card-text text-center small-text">{{ choice.country }}, {{ choice.year }}
+                                    | {{ choice.genres }}</p>
+                                {# url from Choice model instance #}
+                                <p class="card-text text-center small-text data-source-text">
+                                    <a href="{{ choice.url }}"
+                                       target="_blank">Data
+                                        provided by
+                                        Discogs.</a>
+                                </p>
+                                {# id from Choice model instance #}
+                                <button type="submit" class="btn btn-primary d-grid gap-2 mx-auto" name="choice"
+                                        id="choice{{ forloop.counter }}" value="{{ choice.id }}">This is the best!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </form>
+    {# passes id from Question model instance to view associated with the name "results" #}
+    <a role="button" class="btn btn-primary mt-5 m-2" href="{% url 'polls:results' question.id %}">See results</a>
+    {# link to view associated with the name "index" #}
+    <a role="button" class="btn btn-primary mt-5 m-2" href="{% url 'polls:index' %}">Back to Polls</a>
+{% endblock %}

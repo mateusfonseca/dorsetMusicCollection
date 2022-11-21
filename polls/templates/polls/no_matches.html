@@ -1,0 +1,17 @@
+{# CA1: CRUD Application #}
+
+{% extends "base.html" %}
+
+{% block title %}Polls No Matches{% endblock %}
+
+{% block content %}
+    <h1>Oh no!</h1>
+    <br><br>
+    {# selected genre and year upon poll creation attempt #}
+    <h4>It seems like there are no {{ genre }} albums released in {{ year }}</h4>
+    <h4>Too bad! I guess they were just not quite there yet!</h4>
+    {# link to view associated with the name "create" #}
+    <a role="button" class="btn btn-primary mt-5 m-2" href="{% url 'polls:create' %}">Try something else</a>
+    {# link to view associated with the name "index" #}
+    <a role="button" class="btn btn-primary mt-5 m-2" href="{% url 'polls:index' %}">Back to Polls</a>
+{% endblock %}

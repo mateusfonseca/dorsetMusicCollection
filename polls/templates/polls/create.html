@@ -1,0 +1,40 @@
+{# CA1: CRUD Application #}
+
+{% extends "base.html" %}
+
+{% block title %}Create New Poll{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
+    <h1>Create a new poll</h1>
+    <br><br>
+    <div class="container-sm d-inline-flex justify-content-center">
+        {# sends a POST request to view associated with the name "create_selected" #}
+        <form action="{% url 'polls:create_selected' %}" method="post">
+            {% csrf_token %}
+            <h4>What is the best
+                <select name="genre" class="form-select text-center form-select-field"
+                        aria-label="Default select example">
+                    <option selected>Genre</option>
+                    {# selects one genre from rendered list of genres #}
+                    {% for genre in genres %}
+                        <option value="{{ genre }}">{{ genre }}</option>
+                    {% endfor %}
+                </select>
+                album of
+                <select name="year" class="form-select text-center form-select-field"
+                        aria-label="Default select example">
+                    <option selected>Year</option>
+                    {# selects one year from rendered list of years #}
+                    {% for year in years %}
+                        <option value="{{ year }}">{{ year }}</option>
+                    {% endfor %}
+                </select>
+                ?
+            </h4>
+            <button class="m-2 btn btn-primary m-4" type="submit">Create</button>
+        </form>
+    </div>
+{% endblock %}

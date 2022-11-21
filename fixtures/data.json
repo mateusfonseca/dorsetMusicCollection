@@ -1,0 +1,2134 @@
+[
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add question",
+      "content_type": 7,
+      "codename": "add_question"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change question",
+      "content_type": 7,
+      "codename": "change_question"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete question",
+      "content_type": 7,
+      "codename": "delete_question"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view question",
+      "content_type": 7,
+      "codename": "view_question"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add choice",
+      "content_type": 8,
+      "codename": "add_choice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change choice",
+      "content_type": 8,
+      "codename": "change_choice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete choice",
+      "content_type": 8,
+      "codename": "delete_choice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view choice",
+      "content_type": 8,
+      "codename": "view_choice"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$2rMtOG1HliIFJMQgNtb5rZ$d7GQ+ofBLWvNJ2Lg5Fv07DlXgdN4UOhYs0c80jBd23M=",
+      "last_login": "2022-11-17T23:36:31.340Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@dmc.ie",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-11-17T22:18:29.670Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$D1g6VVfVqBPCG0JyZNVIr0$/CAKGFh4+nCBXqrp+p4tbkk0qbKobD+SzylpVb3nsk4=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "anakin",
+      "first_name": "",
+      "last_name": "",
+      "email": "anakin@skywalker.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-11-17T22:21:57.640Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$g4YsxJk7WSjFWDqH7RMi5U$PjpNScmViXM48teB46VKFmxvjXBlLN39Hi7hG6qI9sg=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "obiwan",
+      "first_name": "",
+      "last_name": "",
+      "email": "obiwan@kenobi.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-11-17T22:23:45.295Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$lLICkByGLPFWQrQnk3EWot$KJvJyKTiXDCf4gKx8VrZHfwdnNPErw50ZnXAfIAhB7Y=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "leia",
+      "first_name": "",
+      "last_name": "",
+      "email": "leia@organa.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-11-17T22:24:18.029Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$2tPNmeXlJW4KJwMTSxCrQM$lAWNNhQnqzD79drXX8UIiuysZUm6j1iPzpuPpKmX3ZE=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ahsoka",
+      "first_name": "",
+      "last_name": "",
+      "email": "ahsoka@tano.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-11-17T22:24:51.531Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$M9rRplPUljoLPdHY9ySEnB$h8XonMaCWBQa/AE50FYs2YHxa/y2JQ/WY4U6T8dykvs=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "jon",
+      "first_name": "",
+      "last_name": "",
+      "email": "jon@snow.uk",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-11-17T22:27:29.184Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$Qcuhp9e4RQIWCzNYm4JHjD$ULBSsdwOfMCVR1ZcFIekEwqhASSkVX7/a/WlXWKg+dk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "tyrion",
+      "first_name": "",
+      "last_name": "",
+      "email": "tyrion@lannister.uk",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-11-17T22:28:08.732Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$x6ovHTXyOczG3UTkaPFbcJ$lOEZqHuAfowywW+4+Ao6Ehz3EC9fOY7B740PlvXnYsw=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "daenerys",
+      "first_name": "",
+      "last_name": "",
+      "email": "daenerys@targaryen.uk",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-11-17T22:29:23.807Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$buugcOGvKFvdTAwM5duint$m2fnxcEXfyNetxGlx8/ewUlS22NXWY+xFMRpNIfrs6U=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ned",
+      "first_name": "",
+      "last_name": "",
+      "email": "ned@stark.uk",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-11-17T22:29:55.597Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$GAQ1vDyuB2m4o73ORRCz6b$YZ4j4oGnPp+g7jVmmX/QBRKFRUzel+GyVl003HIO0YQ=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "mateus",
+      "first_name": "",
+      "last_name": "",
+      "email": "mateus@campos.ie",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-11-17T22:30:31.442Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "polls",
+      "model": "question"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "polls",
+      "model": "choice"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 1,
+    "fields": {
+      "genre": "Progressive Metal",
+      "year": 1992,
+      "text": "What is the best Progressive Metal album of 1992?",
+      "pub_date": "2022-11-17T22:36:15.501Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 2,
+    "fields": {
+      "genre": "Prog Rock",
+      "year": 1975,
+      "text": "What is the best Prog Rock album of 1975?",
+      "pub_date": "2022-11-17T22:37:34.389Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 3,
+    "fields": {
+      "genre": "Hip Hop",
+      "year": 2000,
+      "text": "What is the best Hip Hop album of 2000?",
+      "pub_date": "2022-11-17T22:39:08.083Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 4,
+    "fields": {
+      "genre": "Cool Jazz",
+      "year": 1957,
+      "text": "What is the best Cool Jazz album of 1957?",
+      "pub_date": "2022-11-17T22:41:34.105Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 5,
+    "fields": {
+      "genre": "Samba",
+      "year": 1963,
+      "text": "What is the best Samba album of 1963?",
+      "pub_date": "2022-11-17T22:42:15.679Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 6,
+    "fields": {
+      "genre": "Electro",
+      "year": 2005,
+      "text": "What is the best Electro album of 2005?",
+      "pub_date": "2022-11-17T22:42:59.844Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 7,
+    "fields": {
+      "genre": "Death Metal",
+      "year": 1999,
+      "text": "What is the best Death Metal album of 1999?",
+      "pub_date": "2022-11-17T22:44:39.296Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 8,
+    "fields": {
+      "genre": "Jazz-Funk",
+      "year": 2015,
+      "text": "What is the best Jazz-Funk album of 2015?",
+      "pub_date": "2022-11-17T22:48:22.228Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 9,
+    "fields": {
+      "genre": "Shoegaze",
+      "year": 2020,
+      "text": "What is the best Shoegaze album of 2020?",
+      "pub_date": "2022-11-17T22:49:17.807Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 10,
+    "fields": {
+      "genre": "Hard Rock",
+      "year": 1984,
+      "text": "What is the best Hard Rock album of 1984?",
+      "pub_date": "2022-11-17T22:50:20.807Z"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 1,
+    "fields": {
+      "question": 1,
+      "image": "https://i.discogs.com/0hZDXiPKMQpxG_XQ9SMWJ6H-mxGbdPH-PwfG2Hin3x0/rs:fit/g:sm/q:90/h:749/w:521/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc5ODUz/NjktMTQ1NjA4MjEx/OS02MjM2LnBuZw.jpeg",
+      "title": "Reaching Horizons",
+      "artist": "Angra",
+      "year": 1992,
+      "genres": "Power Metal/Progressive Metal",
+      "votes": 0,
+      "country": "Brazil",
+      "url": "https://www.discogs.com/master/770850-Angra-Reaching-Horizons"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 2,
+    "fields": {
+      "question": 1,
+      "image": "https://i.discogs.com/VyECcLSpk_LMAwleXiF2BTrZL_NtXvLg5U2kZFOkWmo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3Mzgy/NS0xNDU3Nzk2ODU1/LTkzODIuanBlZw.jpeg",
+      "title": "Condemned",
+      "artist": "Confessor",
+      "year": 1992,
+      "genres": "Doom Metal/Progressive Metal",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/Confessor-Condemned/master/48251"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 3,
+    "fields": {
+      "question": 1,
+      "image": "https://i.discogs.com/-1edB6CmbcYjOO8vRYHzSQvMtMnMWdftyRalQPKVwoU/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NzE1/MzQ5LTE1OTY0NjM0/MjAtODY2OC5qcGVn.jpeg",
+      "title": "First Depression",
+      "artist": "Depressive Age",
+      "year": 1992,
+      "genres": "Thrash/Heavy Metal/Progressive Metal",
+      "votes": 0,
+      "country": "Europe",
+      "url": "https://www.discogs.com/master/237861-Depressive-Age-First-Depression"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 4,
+    "fields": {
+      "question": 1,
+      "image": "https://i.discogs.com/IU_MXsu8s4XpIt-WE64tmSK-4aPWZwts63K0FPN2ifc/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxODc4/MTUtMTQzNTY5NTQy/NC00Njg5LmpwZWc.jpeg",
+      "title": "Land Of Broken Hearts",
+      "artist": "Royal Hunt",
+      "year": 1992,
+      "genres": "Power Metal/Progressive Metal",
+      "votes": 0,
+      "country": "Denmark",
+      "url": "https://www.discogs.com/master/261429-Royal-Hunt-Land-Of-Broken-Hearts"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 5,
+    "fields": {
+      "question": 1,
+      "image": "https://i.discogs.com/CikjtOm5g6vONvR7X7hvmeXIQKpIQsiSEj2PjJ85viI/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NzI4/OC0xMTcwNDk4Nzk0/LmpwZWc.jpeg",
+      "title": "Kaleidoscope",
+      "artist": "Mekong Delta",
+      "year": 1992,
+      "genres": "Thrash/Progressive Metal",
+      "votes": 0,
+      "country": "Germany",
+      "url": "https://www.discogs.com/master/247153-Mekong-Delta-Kaleidoscope"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 6,
+    "fields": {
+      "question": 1,
+      "image": "https://i.discogs.com/TOfceso-XncVp7jkkfprdp1K14POuEoJJcUBZV_Gu80/rs:fit/g:sm/q:90/h:480/w:480/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyMjM2/Ny0xMTI3MjE1MTQ4/LmpwZWc.jpeg",
+      "title": "Shadow Gallery",
+      "artist": "Shadow Gallery",
+      "year": 1992,
+      "genres": "Prog Rock/Progressive Metal",
+      "votes": 0,
+      "country": "Europe",
+      "url": "https://www.discogs.com/master/126596-Shadow-Gallery-Shadow-Gallery"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 7,
+    "fields": {
+      "question": 1,
+      "image": "https://i.discogs.com/uvcjr__LJepQCYYB8O6W_S6z1OvZIj4SXCoUzKmKScw/rs:fit/g:sm/q:90/h:601/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0ODAz/NC0xNjU0NDI5MTc1/LTg3ODguanBlZw.jpeg",
+      "title": "Into The Everflow",
+      "artist": "Psychotic Waltz",
+      "year": 1992,
+      "genres": "Progressive Metal",
+      "votes": 0,
+      "country": "Germany",
+      "url": "https://www.discogs.com/master/365392-Psychotic-Waltz-Into-The-Everflow"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 8,
+    "fields": {
+      "question": 1,
+      "image": "https://i.discogs.com/3JBE37IRlQQgYYnfjIx--G5wvvmG1z1mfOzUx7EAvSA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4NDgz/My0xMjcwOTQ5MjQ0/LmpwZWc.jpeg",
+      "title": "Not To Be Undimensional Conscious",
+      "artist": "Disharmonic Orchestra",
+      "year": 1992,
+      "genres": "Death Metal/Progressive Metal",
+      "votes": 0,
+      "country": "Germany",
+      "url": "https://www.discogs.com/master/38275-Disharmonic-Orchestra-Not-To-Be-Undimensional-Conscious"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 9,
+    "fields": {
+      "question": 1,
+      "image": "https://i.discogs.com/K7IjK5-ymMyENRVf-uYNmX8BAnAoDFr9SVKTpcr6KmQ/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0NzI3/MjMtMTQ2MjMxNjYy/OS05MDE4LmpwZWc.jpeg",
+      "title": "King's X",
+      "artist": "King's X",
+      "year": 1992,
+      "genres": "Hard Rock/Prog Rock/Progressive Metal",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/152972-Kings-X-Kings-X"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 10,
+    "fields": {
+      "question": 1,
+      "image": "https://i.discogs.com/TuWnZDILCIffevn6YCBhdtw_7Eb87ywt-8ajAFakdHc/rs:fit/g:sm/q:90/h:585/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MDIw/MC0xMjI3NDQ2MzQy/LmpwZWc.jpeg",
+      "title": "Images And Words",
+      "artist": "Dream Theater",
+      "year": 1992,
+      "genres": "Heavy Metal/Progressive Metal",
+      "votes": 1,
+      "country": "Europe",
+      "url": "https://www.discogs.com/master/52086-Dream-Theater-Images-And-Words"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 11,
+    "fields": {
+      "question": 2,
+      "image": "https://i.discogs.com/TPy4FDToB8FRdxjBgyZ0rscfKChYjPZGuiaPawN2S8Q/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyMTE1/NS0xMzY0NjQ4OTA2/LTQ3MjMuanBlZw.jpeg",
+      "title": "How Dare You!",
+      "artist": "10cc",
+      "year": 1975,
+      "genres": "Art Rock/Pop Rock/Prog Rock",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/30531-10cc-How-Dare-You"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 12,
+    "fields": {
+      "question": 2,
+      "image": "https://i.discogs.com/vF4HNB-UplF2pm0J8JPfKRtlVD1o2FOOEhyNRXWP2NY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0ODAw/My0xNjYzNzgxOTQ5/LTE1MTQuanBlZw.jpeg",
+      "title": "Profondo Rosso (Colonna Sonora Originale Del Film)",
+      "artist": "Goblin",
+      "year": 1975,
+      "genres": "Soundtrack/Score/Prog Rock",
+      "votes": 0,
+      "country": "Italy",
+      "url": "https://www.discogs.com/master/14156-Goblin-Profondo-Rosso-Colonna-Sonora-Originale-Del-Film"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 13,
+    "fields": {
+      "question": 2,
+      "image": "https://i.discogs.com/bCt4I8Kw8L1Q-LJAGYqxGRbLlrbGuAcbPPKQJbWcE6Q/rs:fit/g:sm/q:90/h:605/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3OTU5/MDMtMTQ1MDk1Mjgz/Ny0yMzA3LmpwZWc.jpeg",
+      "title": "Bongo Fury",
+      "artist": "Zappa* / Beefheart* / Mothers*",
+      "year": 1975,
+      "genres": "Blues Rock/Avantgarde/Prog Rock",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/35842-Zappa-Beefheart-Mothers-Bongo-Fury"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 14,
+    "fields": {
+      "question": 2,
+      "image": "https://i.discogs.com/9r56nORmzzPyt6SZ_QvIoDHRquvI6pMqcXy2-b_uCLI/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNDUw/MDktMTM1OTM1NjMx/Mi00Mjk1LmpwZWc.jpeg",
+      "title": "The Snow Goose",
+      "artist": "Camel",
+      "year": 1975,
+      "genres": "Prog Rock",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/33562-Camel-The-Snow-Goose"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 15,
+    "fields": {
+      "question": 2,
+      "image": "https://i.discogs.com/DsUmWgHQEUY8ifuE6pS_NG3-TBwGi6WAu6nqKupCxpM/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODkw/NjAtMTU1NjM2Mjgw/Mi03MDI4LmpwZWc.jpeg",
+      "title": "Minstrel In The Gallery",
+      "artist": "Jethro Tull",
+      "year": 1975,
+      "genres": "Folk Rock/Prog Rock",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/38244-Jethro-Tull-Minstrel-In-The-Gallery"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 16,
+    "fields": {
+      "question": 2,
+      "image": "https://i.discogs.com/7EZGVh9d3iPr6tT-oHbTe3PH4Psyk7RUAUtoc-UB7qY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NTc5/OC0xNDk3OTc0MjA1/LTMzMTguanBlZw.jpeg",
+      "title": "Ommadawn",
+      "artist": "Mike Oldfield",
+      "year": 1975,
+      "genres": "Prog Rock/Art Rock/Folk Rock",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/16108-Mike-Oldfield-Ommadawn"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 17,
+    "fields": {
+      "question": 2,
+      "image": "https://i.discogs.com/CIk-pK8SRJw5ZrOeuV7_8SjWVquBK_Qmd09pP7nffDk/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTkw/MTgtMTY1NDM2NTgy/OS01Njg2LmpwZWc.jpeg",
+      "title": "One Size Fits All",
+      "artist": "Frank Zappa And The Mothers Of Invention*",
+      "year": 1975,
+      "genres": "Fusion/Avantgarde/Prog Rock",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/35863-Frank-Zappa-And-The-Mothers-Of-Invention-One-Size-Fits-All"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 18,
+    "fields": {
+      "question": 2,
+      "image": "https://i.discogs.com/QjISn1OdQyM4XUHT3vb0rbF8xkYIrZe2SfqlmNVk6ME/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3ODc4/MjEtMTQzNDAyOTUw/MS00NzMyLmpwZWc.jpeg",
+      "title": "Face The Music",
+      "artist": "Electric Light Orchestra",
+      "year": 1975,
+      "genres": "Pop Rock/Classic Rock/Prog Rock/Symphonic Rock",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/21693-Electric-Light-Orchestra-Face-The-Music"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 19,
+    "fields": {
+      "question": 2,
+      "image": "https://i.discogs.com/3J-o8FGjaPHtGSRsW1Tj1FXcgPPcehpGx-nzIh5oOOY/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/MTg5LTE0OTEyMzgz/NDItMzY3NC5qcGVn.jpeg",
+      "title": "Fly By Night",
+      "artist": "Rush",
+      "year": 1975,
+      "genres": "Hard Rock/Prog Rock",
+      "votes": 0,
+      "country": "Canada",
+      "url": "https://www.discogs.com/master/7478-Rush-Fly-By-Night"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 20,
+    "fields": {
+      "question": 2,
+      "image": "https://i.discogs.com/dxeA-L9GA62asKKRC_5fUhgmVt1lkEjAI9Pis5yhV9U/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MzU5/Ny0xNTYwMzY5NTM2/LTgzMDIuanBlZw.jpeg",
+      "title": "Wish You Were Here",
+      "artist": "Pink Floyd",
+      "year": 1975,
+      "genres": "Prog Rock",
+      "votes": 1,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/11703-Pink-Floyd-Wish-You-Were-Here"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 21,
+    "fields": {
+      "question": 3,
+      "image": "https://i.discogs.com/50bNxotaGNysgaHf-saqMUn7Er1gglnwy-YLOBXs-cQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyODkx/OS0xMzIwNjQ1NzMx/LmpwZWc.jpeg",
+      "title": "A Much Better Tomorrow",
+      "artist": "Automator*",
+      "year": 2000,
+      "genres": "Instrumental/Hip Hop",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/123610-Automator-A-Much-Better-Tomorrow"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 22,
+    "fields": {
+      "question": 3,
+      "image": "https://i.discogs.com/4M5cG_HCEe6ErQsK20MyDcyXxj8HYPLZVHxPb-M-l1E/rs:fit/g:sm/q:90/h:545/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0OTEx/My0xNDYwNTUzNjc2/LTQ0NDIuanBlZw.jpeg",
+      "title": "Industry Shakedown",
+      "artist": "Bumpy Knuckles / Freddie Foxxx",
+      "year": 2000,
+      "genres": "Hardcore Hip-Hop",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/55350-Bumpy-Knuckles-Freddie-Foxxx-Industry-Shakedown"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 23,
+    "fields": {
+      "question": 3,
+      "image": "https://i.discogs.com/xGVe8GytxYEXdXFUhyDR7OWsCknX-rnVdRpaEZn5U38/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4MTYw/MS0xMzE1NzcxMjgz/LmpwZWc.jpeg",
+      "title": "The Piece Maker",
+      "artist": "Tony Touch",
+      "year": 2000,
+      "genres": "Hardcore Hip-Hop/Thug Rap",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/39168-Tony-Touch-The-Piece-Maker"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 24,
+    "fields": {
+      "question": 3,
+      "image": "https://i.discogs.com/2q825UX5K_5p2GM61IQt3RSzHAN0GOB_mSWIPbTxeMI/rs:fit/g:sm/q:90/h:349/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzMDU1/MTEtMTM5MjIxNzA0/OC04Mzk4LmpwZWc.jpeg",
+      "title": "Code4109",
+      "artist": "DJ Krush",
+      "year": 2000,
+      "genres": "Acid Jazz/Trip Hop/Hip Hop",
+      "votes": 0,
+      "country": "Japan",
+      "url": "https://www.discogs.com/master/46330-DJ-Krush-Code4109"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 25,
+    "fields": {
+      "question": 3,
+      "image": "https://i.discogs.com/A7lAQD6v68HhkSllk93U4XXurOKPmOIGfga-BNhBEXc/rs:fit/g:sm/q:90/h:350/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNzM4/NzMtMTMyMDg5ODg1/Mi5qcGVn.jpeg",
+      "title": "Butterfly",
+      "artist": "Crazy Town",
+      "year": 2000,
+      "genres": "Alternative Rock/Nu Metal/Hip Hop",
+      "votes": 1,
+      "country": "US",
+      "url": "https://www.discogs.com/master/98419-Crazy-Town-Butterfly"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 26,
+    "fields": {
+      "question": 3,
+      "image": "https://i.discogs.com/A5GZmt-8bcYEZ5mrQiQzC7hZY3TwtIDFIZWtMbpZde4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5NzQz/MjQtMTUxNTY2NDY1/Ny03MTMwLmpwZWc.jpeg",
+      "title": "The Notorious KIM",
+      "artist": "Lil' Kim",
+      "year": 2000,
+      "genres": "Hardcore Hip-Hop",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/42735-Lil-Kim-The-Notorious-KIM"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 27,
+    "fields": {
+      "question": 3,
+      "image": "https://i.discogs.com/DVDjzl_2iiD6xNjwOySqcE8kSMPoSkaklr2IeJOffCM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NDU5/LTE1Mzk0NTk4MjQt/Nzk0NS5qcGVn.jpeg",
+      "title": "Frankenstein Girls Will Seem Strangely Sexy",
+      "artist": "Mindless Self Indulgence",
+      "year": 2000,
+      "genres": "Industrial/Breakcore/Hip Hop",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/51996-Mindless-Self-Indulgence-Frankenstein-Girls-Will-Seem-Strangely-Sexy"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 28,
+    "fields": {
+      "question": 3,
+      "image": "https://i.discogs.com/hRpWYQZzDlt0wAG5UYVwV2IP5eUH_f-beXfyyIXv82o/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODQ3/My0xNjM4ODg4ODY2/LTU5OTMuanBlZw.jpeg",
+      "title": "Warriorz",
+      "artist": "M.O.P.",
+      "year": 2000,
+      "genres": "Thug Rap/Hardcore Hip-Hop/Boom Bap",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/55242-MOP-Warriorz"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 29,
+    "fields": {
+      "question": 3,
+      "image": "https://i.discogs.com/Xij4fq5GKWe_5olTnvy4NE9PTj2EQOVSerTSLmD1zpo/rs:fit/g:sm/q:90/h:160/w:160/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0NTgy/LTAwMS5qcGc.jpeg",
+      "title": "Xen Cuts",
+      "artist": "Various",
+      "year": 2000,
+      "genres": "Acid Jazz/Experimental/Breaks/Trip Hop/Hip Hop/Downtempo",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/43000-Various-Xen-Cuts"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 30,
+    "fields": {
+      "question": 3,
+      "image": "https://i.discogs.com/iteJA4KXRLKzBQ8ekp0Alm2ibJzvKugSfVoLDxHYbJA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0Njc1/NDYtMTUyMzEwOTMx/NS0zMTA5LmpwZWc.jpeg",
+      "title": "The W",
+      "artist": "Wu-Tang Clan",
+      "year": 2000,
+      "genres": "Hardcore Hip-Hop",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/36772-Wu-Tang-Clan-The-W"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 31,
+    "fields": {
+      "question": 4,
+      "image": "https://i.discogs.com/cSIf7UVjEZ9Z2uloCr8Sya3KKMv7D2kPd6FE7A7Ah3I/rs:fit/g:sm/q:90/h:455/w:454/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMjA4/MDMtMTMyNTY0NzMz/MS5qcGVn.jpeg",
+      "title": "The Jimmy Giuffre 3",
+      "artist": "The Jimmy Giuffre 3*",
+      "year": 1957,
+      "genres": "Bop/Cool Jazz",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/299170-The-Jimmy-Giuffre-3-The-Jimmy-Giuffre-3"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 32,
+    "fields": {
+      "question": 4,
+      "image": "https://i.discogs.com/MRPc0t8uwJGhPjPVCM5ta52aOsQX5Kf5zMowW19qB7Y/rs:fit/g:sm/q:90/h:607/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNzMw/MDUtMTU2MTAxMjg3/OS02NDgwLmpwZWc.jpeg",
+      "title": "Paul Desmond Quartet",
+      "artist": "Gerry Mulligan",
+      "year": 1957,
+      "genres": "Cool Jazz",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/287687-Gerry-Mulligan-Paul-Desmond-Quartet-Gerry-Mulligan-Paul-Desmond-Quartet"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 33,
+    "fields": {
+      "question": 4,
+      "image": "https://i.discogs.com/YEhHJbdYoWpJ0y033BTu_YWW92i49pdwI_ovCXz7xDs/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNjMx/NDItMTMyMzIwNjI1/NS5qcGVn.jpeg",
+      "title": "The Modern Jazz Quartet",
+      "artist": "The Modern Jazz Quartet",
+      "year": 1957,
+      "genres": "Cool Jazz",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/245537-The-Modern-Jazz-Quartet-The-Modern-Jazz-Quartet"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 34,
+    "fields": {
+      "question": 4,
+      "image": "https://i.discogs.com/9cNnI-rnw72lNVeOJI84Ln1NoZsot5NF8QRuf1AqkyQ/rs:fit/g:sm/q:90/h:580/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyODk2/MDAtMTM4OTk2MDc0/My05MTA5LmpwZWc.jpeg",
+      "title": "Afternoon In Paris",
+      "artist": "John Lewis (2) & Sacha Distel",
+      "year": 1957,
+      "genres": "Bop/Cool Jazz",
+      "votes": 0,
+      "country": "France",
+      "url": "https://www.discogs.com/master/312293-John-Lewis-2-Sacha-Distel-Afternoon-In-Paris"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 35,
+    "fields": {
+      "question": 4,
+      "image": "https://i.discogs.com/VFJYO8iTDo1SocZBK_KUqAXZ_xjTlVvRzILo6_vS_bI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5NDU0/NjctMTQwNzAyNTE2/Ny00MTY3LmpwZWc.jpeg",
+      "title": "Lee Konitz Plays With The Gerry Mulligan Quartet",
+      "artist": "Lee Konitz Plays With The Gerry Mulligan Quartet*",
+      "year": 1957,
+      "genres": "Bop/Cool Jazz",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/373270-Lee-Konitz-Plays-With-The-Gerry-Mulligan-Quartet-Lee-Konitz-Plays-With-The-Gerry-Mulligan-Quartet"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 36,
+    "fields": {
+      "question": 4,
+      "image": "https://i.discogs.com/fjT5L0eIW3PG8ow2ptRYy35eAxFeOUL9AHS0t0P5tF8/rs:fit/g:sm/q:90/h:603/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMTcz/ODMtMTU0MDM0MzQ3/My01OTg2LmpwZWc.jpeg",
+      "title": "Dave Digs Disney",
+      "artist": "The Dave Brubeck Quartet",
+      "year": 1957,
+      "genres": "Cool Jazz",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/110093-The-Dave-Brubeck-Quartet-Dave-Digs-Disney"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 37,
+    "fields": {
+      "question": 4,
+      "image": "https://i.discogs.com/7cR2KrvwtU_H152OrrEKVUCME4ki_xRpzLYaFLZpfQ4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODg1/NDg4LTE2MTA0MDEy/ODEtOTY0My5qcGVn.jpeg",
+      "title": "East Coasting",
+      "artist": "Charlie Mingus*",
+      "year": 1957,
+      "genres": "Cool Jazz/Bop",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/176886-Charlie-Mingus-East-Coasting"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 38,
+    "fields": {
+      "question": 4,
+      "image": "https://i.discogs.com/TE-eOxq75WHLZ2Axsp7vuiWhibdz05iVh0_9QA89xos/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc3MzEx/OTctMTU5MTYzOTM0/OS05MTY4LmpwZWc.jpeg",
+      "title": "New Jazz Conceptions",
+      "artist": "Bill Evans",
+      "year": 1957,
+      "genres": "Cool Jazz",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/178735-Bill-Evans-New-Jazz-Conceptions"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 39,
+    "fields": {
+      "question": 4,
+      "image": "https://i.discogs.com/o_lh4hPhjZxyNIHTC-HX3t6DhLCFGXsYmpMsTPMeCTI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0MDYy/ODEtMTQ3NDA0NTc5/MC02MTc4LmpwZWc.jpeg",
+      "title": "Mulligan Meets Monk",
+      "artist": "Thelonious Monk And Gerry Mulligan",
+      "year": 1957,
+      "genres": "Bop/Cool Jazz",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/175091-Thelonious-Monk-And-Gerry-Mulligan-Mulligan-Meets-Monk"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 40,
+    "fields": {
+      "question": 4,
+      "image": "https://i.discogs.com/5PjN3ERLk-bhldEaikIIpDjGOOCOhhSp5SqIYoNrERM/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0NTY4/NTctMTQ0ODQzNTQ4/My04ODEzLmpwZWc.jpeg",
+      "title": "Birth Of The Cool",
+      "artist": "Miles Davis",
+      "year": 1957,
+      "genres": "Cool Jazz",
+      "votes": 1,
+      "country": "US",
+      "url": "https://www.discogs.com/master/62308-Miles-Davis-Birth-Of-The-Cool"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 41,
+    "fields": {
+      "question": 5,
+      "image": "https://i.discogs.com/dzry6X2WUOUKVovi17A_-Sj-O7wZnOab5zLj5GpR76g/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4ODA3/NDgtMTY0NjM4MDAy/My03MTU2LmpwZWc.jpeg",
+      "title": "Sambossa",
+      "artist": "Elza Soares",
+      "year": 1963,
+      "genres": "Samba",
+      "votes": 0,
+      "country": "Brazil",
+      "url": "https://www.discogs.com/master/1439043-Elza-Soares-Sambossa"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 42,
+    "fields": {
+      "question": 5,
+      "image": "https://i.discogs.com/4ZgkcLteMnTr0v0HzlDkWZ6kOUFCAfbQVxRzsrcHjPU/rs:fit/g:sm/q:90/h:261/w:261/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNTEx/OTQtMTMyNjkxNzM3/My5qcGVn.jpeg",
+      "title": "Orgão Samba Percussão Vol. 2",
+      "artist": "André Penazzi",
+      "year": 1963,
+      "genres": "Bossa Nova/Samba",
+      "votes": 0,
+      "country": "Brazil",
+      "url": "https://www.discogs.com/master/760014-Andr%C3%A9-Penazzi-Org%C3%A3o-Samba-Percuss%C3%A3o-Vol-2"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 43,
+    "fields": {
+      "question": 5,
+      "image": "https://i.discogs.com/BH9QuvDdckcVAEGYJTRTl2uGvHQfw8EJswkK4xyBpVw/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMTk2/NjAtMTU4Nzk2MjM0/NS0yNDA0LmpwZWc.jpeg",
+      "title": "Elizete Interpreta Vinicius",
+      "artist": "Elizeth Cardoso",
+      "year": 1963,
+      "genres": "Bossanova/Samba/MPB",
+      "votes": 0,
+      "country": "Brazil",
+      "url": "https://www.discogs.com/master/1163813-Elizeth-Cardoso-Elizete-Interpreta-Vinicius"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 44,
+    "fields": {
+      "question": 5,
+      "image": "https://i.discogs.com/ZKqNqtD6Wauu1Uam6uCoiWVGTEhMtqingjRTkZifi_0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3MzAz/NzYtMTQwMTExNzg5/MS01MTEzLmpwZWc.jpeg",
+      "title": "News From Brazil",
+      "artist": "Eliana* & Booker Pittman",
+      "year": 1963,
+      "genres": "Bossa Nova/MPB/Samba-Canção",
+      "votes": 0,
+      "country": "Brazil",
+      "url": "https://www.discogs.com/Eliana-Booker-Pittman-News-From-Brazil-Bossa-Nova/master/1115693"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 45,
+    "fields": {
+      "question": 5,
+      "image": "https://i.discogs.com/RjB3Mwozphp3AOsbY-3YyNYK3QSMuxX8w6Y1BnKnzSk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5ODkz/MzMtMTYzMTIxNjky/Ny00NTcyLmpwZWc.jpeg",
+      "title": "Samba Esquema Novo",
+      "artist": "Jorge Ben",
+      "year": 1963,
+      "genres": "Samba/Bossa Nova",
+      "votes": 1,
+      "country": "Brazil",
+      "url": "https://www.discogs.com/Jorge-Ben-Samba-Esquema-Novo/master/1331889"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 46,
+    "fields": {
+      "question": 5,
+      "image": "https://i.discogs.com/a3q7GnuyxI1vcUSeUYX7WCwcnSKzU-__Wxx8xFyHM2c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0NDM5/MDItMTYyMjY1MTMw/MC01ODk1LmpwZWc.jpeg",
+      "title": "Il Boom (Colonna Sonora Originale Del Film)",
+      "artist": "Piero Piccioni",
+      "year": 1963,
+      "genres": "Samba/Soundtrack/Easy Listening/Contemporary Jazz",
+      "votes": 0,
+      "country": "Italy",
+      "url": "https://www.discogs.com/Piero-Piccioni-Il-Boom-Colonna-Sonora-Originale-Del-Film/master/1102868"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 47,
+    "fields": {
+      "question": 5,
+      "image": "https://i.discogs.com/lHMEcVsQBqcP3Qbn1Hyv5cw79F9XyPkFOvHp6-FAJAE/rs:fit/g:sm/q:90/h:609/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMzky/NDU3LTE2NTM4MTEw/NTUtNDAwNi5wbmc.jpeg",
+      "title": "Um Senhor Talento",
+      "artist": "Sérgio Ricardo",
+      "year": 1963,
+      "genres": "Bossanova/Samba",
+      "votes": 0,
+      "country": "Brazil",
+      "url": "https://www.discogs.com/master/505776-S%C3%A9rgio-Ricardo-Um-Senhor-Talento"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 48,
+    "fields": {
+      "question": 5,
+      "image": "https://i.discogs.com/15H5Nfip2wro9TY0Arlv8y72wAKnbOz7k0m-959jeFg/rs:fit/g:sm/q:90/h:527/w:543/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTg3/NzktMTI1OTAwNjMy/NS5qcGVn.jpeg",
+      "title": "A Bossa Nova De Roberto Menescal E Seu Conjunto",
+      "artist": "Roberto Menescal E Seu Conjunto",
+      "year": 1963,
+      "genres": "Samba/Bossanova/Latin Jazz",
+      "votes": 0,
+      "country": "Brazil",
+      "url": "https://www.discogs.com/master/351773-Roberto-Menescal-E-Seu-Conjunto-A-Bossa-Nova-De-Roberto-Menescal-E-Seu-Conjunto"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 49,
+    "fields": {
+      "question": 5,
+      "image": "https://i.discogs.com/t9KSTj_5HyWUWLyNJjb631z9fbVt7nvaGaj5WiLH4jw/rs:fit/g:sm/q:90/h:589/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MDc3/MTItMTMzNzE4MDc2/MS0zMzQxLmpwZWc.jpeg",
+      "title": "Vinicius & Odette Lara",
+      "artist": "Vinícius* & Odette Lara",
+      "year": 1963,
+      "genres": "Bossanova/Samba",
+      "votes": 0,
+      "country": "Brazil",
+      "url": "https://www.discogs.com/master/436595-Vin%C3%ADcius-Odette-Lara-Vinicius-Odette-Lara"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 50,
+    "fields": {
+      "question": 5,
+      "image": "https://i.discogs.com/7pz48oiq9xzI5UqixGqrdkAyXshjmL-G4o2tppy_v8Y/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDI2/NTAtMTY2NjU5MzYx/NC0yMzk4LmpwZWc.jpeg",
+      "title": "À Vontade",
+      "artist": "Baden Powell",
+      "year": 1963,
+      "genres": "Bossanova/Samba",
+      "votes": 0,
+      "country": "Brazil",
+      "url": "https://www.discogs.com/master/420482-Baden-Powell-%C3%80-Vontade"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 51,
+    "fields": {
+      "question": 6,
+      "image": "https://i.discogs.com/vmcWieFGoCRb6b3n14X96-6mrQQE0lwUBTjwX2aCZAA/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNjU2/NS0xMTI4ODQ3NTky/LmdpZg.jpeg",
+      "title": "Waters Of Nazareth",
+      "artist": "Justice (3)",
+      "year": 2005,
+      "genres": "Electro/Tech House",
+      "votes": 0,
+      "country": "France",
+      "url": "https://www.discogs.com/master/56080-Justice-Waters-Of-Nazareth"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 52,
+    "fields": {
+      "question": 6,
+      "image": "https://i.discogs.com/q3p0LHNzkveew9gcyW6oesNlN4ZqXjyQfz5-TUKvyuI/rs:fit/g:sm/q:90/h:466/w:530/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwOTY3/Ny0xMzgyMzIzNDIw/LTQwMTYuanBlZw.jpeg",
+      "title": "Dare",
+      "artist": "Gorillaz",
+      "year": 2005,
+      "genres": "Electro/Downtempo/Pop Rap",
+      "votes": 1,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/58033-Gorillaz-Dare"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 53,
+    "fields": {
+      "question": 6,
+      "image": "https://i.discogs.com/LxxbY-Gh8HfygS09lqP_7pmHn3YJyTUJrWD-eRLcRIs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NTY0/MC0xMTY1MTcyMDMw/LmpwZWc.jpeg",
+      "title": "Analord 02",
+      "artist": "AFX*",
+      "year": 2005,
+      "genres": "Leftfield/Acid/Techno/Deep House/Ambient/Electro",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/AFX-Analord-02/master/210499"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 54,
+    "fields": {
+      "question": 6,
+      "image": "https://i.discogs.com/OXol8eM0hodD29tYapDYDYcA95Ca4mVolnmejSfjIcY/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNzQ5/NC0xMjM0MDA4MDE3/LmpwZWc.jpeg",
+      "title": "OK Cowboy",
+      "artist": "Vitalic",
+      "year": 2005,
+      "genres": "Techno/Electro/Synth-pop",
+      "votes": 0,
+      "country": "Europe",
+      "url": "https://www.discogs.com/master/49930-Vitalic-OK-Cowboy"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 55,
+    "fields": {
+      "question": 6,
+      "image": "https://i.discogs.com/o5bJjLpcnU2s6vfeYEWg_Tc0xc1rgJmOmHOoEzUv7Zs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwODIy/My0xNTcyMzg4MjM2/LTgxNTguanBlZw.jpeg",
+      "title": "Robyn",
+      "artist": "Robyn",
+      "year": 2005,
+      "genres": "Broken Beat/Electro/Downtempo/Synth-pop/Hip Hop/Dance-pop",
+      "votes": 0,
+      "country": "Scandinavia",
+      "url": "https://www.discogs.com/master/45728-Robyn-Robyn"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 56,
+    "fields": {
+      "question": 6,
+      "image": "https://i.discogs.com/-6JS-MdAOWu_XnZACe_slQIYxeDG6ln0rt-c_csPpDI/rs:fit/g:sm/q:90/h:536/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3Nzk2/Ny0xNjE3MDYyNjk4/LTUzMTguanBlZw.jpeg",
+      "title": "Analord 10",
+      "artist": "Aphex Twin",
+      "year": 2005,
+      "genres": "Breakbeat/IDM/Electro/Experimental/Acid",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/48859-Aphex-Twin-Analord-10"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 57,
+    "fields": {
+      "question": 6,
+      "image": "https://i.discogs.com/2ns0C2rUjySYWi2UIj8SJ6o9e3bQ82-iZidqjChuJ9k/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3OTIy/NC0xMjM2NzAzODU4/LmpwZWc.jpeg",
+      "title": "What Else Is There?",
+      "artist": "Röyksopp",
+      "year": 2005,
+      "genres": "House/Electro/Synth-pop",
+      "votes": 0,
+      "country": "Europe",
+      "url": "https://www.discogs.com/master/30197-R%C3%B6yksopp-What-Else-Is-There"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 58,
+    "fields": {
+      "question": 6,
+      "image": "https://i.discogs.com/GXGUAB-GEyI-ssK2d2kuWtVswArjmV_1D-PyCG0WJuw/rs:fit/g:sm/q:90/h:580/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NDI2/NS0xNTY4NTg0NDcw/LTU4NTMuanBlZw.jpeg",
+      "title": "Body Language",
+      "artist": "M.A.N.D.Y. vs. Booka Shade",
+      "year": 2005,
+      "genres": "Progressive House/House/Electro",
+      "votes": 0,
+      "country": "Germany",
+      "url": "https://www.discogs.com/MANDY-vs-Booka-Shade-Body-Language/master/34927"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 59,
+    "fields": {
+      "question": 6,
+      "image": "https://i.discogs.com/fna9H7Cl-5MmzUX0fkfyGEswJDklMLkwWQsg9T2WByE/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3MTQy/NC0xMTE4NDc5OTU5/LmpwZw.jpeg",
+      "title": "Minimum-Maximum",
+      "artist": "Kraftwerk",
+      "year": 2005,
+      "genres": "Electro/Synth-pop",
+      "votes": 0,
+      "country": "Germany",
+      "url": "https://www.discogs.com/master/78865-Kraftwerk-Minimum-Maximum"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 60,
+    "fields": {
+      "question": 6,
+      "image": "https://i.discogs.com/FEWXTwkcL0-QDeeH_uXA7HwRqjXBujz-6Mic0gx6Ds8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNzY4/Ni0xMzQ3NTc0NzU3/LTgwNDguanBlZw.jpeg",
+      "title": "Human After All",
+      "artist": "Daft Punk",
+      "year": 2005,
+      "genres": "House/Abstract/Electro/Experimental",
+      "votes": 0,
+      "country": "Europe",
+      "url": "https://www.discogs.com/master/26833-Daft-Punk-Human-After-All"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 61,
+    "fields": {
+      "question": 7,
+      "image": "https://i.discogs.com/zTYgXr2e1SMmd_e9Tfh4Fo4LEqAW680Zf1Mgff6vHyo/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0Nzgx/Ni0xMzQ0MDE3MDI5/LTkwNTcuanBlZw.jpeg",
+      "title": "Chainsaw Dismemberment",
+      "artist": "Mortician",
+      "year": 1999,
+      "genres": "Death Metal",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/43840-Mortician-Chainsaw-Dismemberment"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 62,
+    "fields": {
+      "question": 7,
+      "image": "https://i.discogs.com/XaUBagMqks-N-8tDz-CTJt1AhQJ0MX2PDoWV1kDkiJU/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0ODEw/NjctMTI4ODQzOTk1/My5qcGVn.jpeg",
+      "title": "Projector",
+      "artist": "Dark Tranquillity",
+      "year": 1999,
+      "genres": "Death Metal",
+      "votes": 0,
+      "country": "Germany",
+      "url": "https://www.discogs.com/master/27750-Dark-Tranquillity-Projector"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 63,
+    "fields": {
+      "question": 7,
+      "image": "https://i.discogs.com/gkfoa5nbDggNFkd4EsxHqH4sKFDTYQdsxV4KixG0kAY/rs:fit/g:sm/q:90/h:472/w:480/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3MTc0/OTktMTM3MzI0NDcz/OS0zMzg1LmpwZWc.jpeg",
+      "title": "Failures For Gods",
+      "artist": "Immolation",
+      "year": 1999,
+      "genres": "Death Metal",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/88808-Immolation-Failures-For-Gods"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 64,
+    "fields": {
+      "question": 7,
+      "image": "https://i.discogs.com/iNk5TTtUOEZGmKoRmnmRCwuwZfsJJK5rqoY6xAr0_NM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwODg4/OS0xMjI2NDk2Njk1/LmpwZWc.jpeg",
+      "title": "Satanica",
+      "artist": "Behemoth (3)",
+      "year": 1999,
+      "genres": "Black Metal/Death Metal",
+      "votes": 0,
+      "country": "Italy",
+      "url": "https://www.discogs.com/master/22725-Behemoth-Satanica"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 65,
+    "fields": {
+      "question": 7,
+      "image": "https://i.discogs.com/-j3XDjdROK_CtXn1AgtfB3YQ9eokmh3mlaLtiR6tWBs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc2MTUy/OS0xMTU4MTc3OTY0/LmpwZWc.jpeg",
+      "title": "The Avenger",
+      "artist": "Amon Amarth",
+      "year": 1999,
+      "genres": "Melodic Death Metal/Viking Metal",
+      "votes": 0,
+      "country": "Germany",
+      "url": "https://www.discogs.com/master/40307-Amon-Amarth-The-Avenger"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 66,
+    "fields": {
+      "question": 7,
+      "image": "https://i.discogs.com/F9L6EA4Kj3zYCoprKk9_qFnStGTmg5Tf6URv2wZgfbQ/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzNzAx/Mi0xMTI4ODk5MTA4/LmpwZWc.jpeg",
+      "title": "Colony",
+      "artist": "In Flames",
+      "year": 1999,
+      "genres": "Melodic Death Metal",
+      "votes": 0,
+      "country": "Germany",
+      "url": "https://www.discogs.com/master/28315-In-Flames-Colony"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 67,
+    "fields": {
+      "question": 7,
+      "image": "https://i.discogs.com/MMhnH8pNxOQWXDQMxPUg6MuLNgrK-WjCJF5nfUX4ezo/rs:fit/g:sm/q:90/h:528/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyMDI4/OS0xMjc4NDI3OTgz/LmpwZWc.jpeg",
+      "title": "Bloodthirst",
+      "artist": "Cannibal Corpse",
+      "year": 1999,
+      "genres": "Death Metal",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/18295-Cannibal-Corpse-Bloodthirst"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 68,
+    "fields": {
+      "question": 7,
+      "image": "https://i.discogs.com/gTcz57tUQLGMsLn3CGEbzc54dKxgxjCdFO9IOnPLnvI/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNjgx/MjEtMTY1NTUxOTk1/OS03NTgxLmpwZWc.jpeg",
+      "title": "The Gathering",
+      "artist": "Testament (2)",
+      "year": 1999,
+      "genres": "Thrash/Death Metal",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/67186-Testament-The-Gathering"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 69,
+    "fields": {
+      "question": 7,
+      "image": "https://i.discogs.com/jfFoHk3q_g5OUsw1S3PLdD5FVHBximes6ZBj2QiF8UY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1MTEx/MzUtMTM2NzQyODE0/Ni04MDc1LmpwZWc.jpeg",
+      "title": "Hatebreeder",
+      "artist": "Children Of Bodom",
+      "year": 1999,
+      "genres": "Melodic Death Metal",
+      "votes": 0,
+      "country": "Finland",
+      "url": "https://www.discogs.com/master/4344-Children-Of-Bodom-Hatebreeder"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 70,
+    "fields": {
+      "question": 7,
+      "image": "https://i.discogs.com/TR07Wo1KPGzd3rClefoO1SeAH2DzGYO5pzIv6wV5lco/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MTk3/OC0xNjQ3MDM2NDQ3/LTk0MTkuanBlZw.jpeg",
+      "title": "Still Life",
+      "artist": "Opeth",
+      "year": 1999,
+      "genres": "Progressive Metal/Melodic Death Metal/Acoustic",
+      "votes": 1,
+      "country": "Europe",
+      "url": "https://www.discogs.com/master/3667-Opeth-Still-Life"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 71,
+    "fields": {
+      "question": 8,
+      "image": "https://i.discogs.com/uc3_8znPnFTrSOg4M2HMqM-nVI_lQiqlqemRHNnHoSQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNjAx/NTMtMTYxMTUxNzUy/Ni05OTg2Lm1wbw.jpeg",
+      "title": "Tchero Adari Nègn / Bèmin Sèbèb Litlash",
+      "artist": "Alèmayèhu Eshèté* / Mahmoud Ahmed",
+      "year": 2015,
+      "genres": "African/Jazz-Funk",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/Al%C3%A8may%C3%A8hu-Esh%C3%A8t%C3%A9-Mahmoud-Ahmed-Tchero-Adari-N%C3%A8gn-B%C3%A8min-S%C3%A8b%C3%A8b-Litlash/master/918356"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 72,
+    "fields": {
+      "question": 8,
+      "image": "https://i.discogs.com/5VlXNTsDqhdeO8m1StfjElkRscGxaTsZgI8Tr58rrDw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3MzIw/NzgtMTQyNjY4MjA4/MC04OTI5LmpwZWc.jpeg",
+      "title": "Rocksteady Disco #1",
+      "artist": "Lafleur (3)",
+      "year": 2015,
+      "genres": "Disco/Jazz-Funk",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/Lafleur-Rocksteady-Disco-1/master/807565"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 73,
+    "fields": {
+      "question": 8,
+      "image": "https://i.discogs.com/sXbdI4cMiM8PMMSgM_oYhNKZ8Sju0r98dEp7ZM2eUyQ/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0ODcx/NzEtMTQ0MjQ4Njk2/NS04Mzk4LmpwZWc.jpeg",
+      "title": "Dramatic Funk Themes Vol. 4",
+      "artist": "Various",
+      "year": 2015,
+      "genres": "Soul-Jazz/Jazz-Funk",
+      "votes": 0,
+      "country": "Germany",
+      "url": "https://www.discogs.com/Various-Dramatic-Funk-Themes-Vol-4-Action-Tension-Drama-Rhythms-1972-1982/master/886626"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 74,
+    "fields": {
+      "question": 8,
+      "image": "https://i.discogs.com/IZZJ1BkaxKOWCnhelYXtD_n4gLz83803s3V6j_-Ckcw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4Mzc0/OTAtMTQ1MjU3MDE4/Ni05NTc5LnBuZw.jpeg",
+      "title": "Dog ",
+      "artist": "Max Graef Band",
+      "year": 2015,
+      "genres": "Jazz-Funk/Disco",
+      "votes": 0,
+      "country": "Germany",
+      "url": "https://www.discogs.com/Max-Graef-Band-Dog-/master/1014425"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 75,
+    "fields": {
+      "question": 8,
+      "image": "https://i.discogs.com/qMzMIxooJRYZtiXF3llvZz78X5RIgOiZMaFGnfL62_Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxMzEz/OTAtMTQzNDQwODg5/MS03MzY2LmpwZWc.jpeg",
+      "title": "III",
+      "artist": "Bixiga 70",
+      "year": 2015,
+      "genres": "Afrobeat/Latin Jazz/Jazz-Funk",
+      "votes": 0,
+      "country": "Germany",
+      "url": "https://www.discogs.com/master/853177-Bixiga-70-III"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 76,
+    "fields": {
+      "question": 8,
+      "image": "https://i.discogs.com/P8vCdyvZOiEDOHAhQm8JZcOz5agIVt1rmz1ZHSVIgMw/rs:fit/g:sm/q:90/h:403/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDg1/NjUtMTQyNDk5MjU4/OC01ODg1LmpwZWc.jpeg",
+      "title": "Vladimir's Groove / Igor's Groove",
+      "artist": "The Soul Surfers (2)",
+      "year": 2015,
+      "genres": "Funk/Jazz-Funk/Psychedelic",
+      "votes": 0,
+      "country": "Russia",
+      "url": "https://www.discogs.com/master/815051-The-Soul-Surfers-Vladimirs-Groove-Igors-Groove"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 77,
+    "fields": {
+      "question": 8,
+      "image": "https://i.discogs.com/olFie-mjU2KcyQX4vwOQxc7U1AsoQoM8jSNWHRiH_uk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MjMw/MjEtMTQyNzM3NTEy/NS01NDIyLmpwZWc.jpeg",
+      "title": "Afrodeezia",
+      "artist": "Marcus Miller",
+      "year": 2015,
+      "genres": "Jazz-Funk",
+      "votes": 0,
+      "country": "Japan",
+      "url": "https://www.discogs.com/master/814807-Marcus-Miller-Afrodeezia"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 78,
+    "fields": {
+      "question": 8,
+      "image": "https://i.discogs.com/RDes6QUwITRTe-pVxhCLj6U3ZvF2d0QGgTTzgDIXIcY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc2OTkx/OTktMTQ0Njk4NjM4/NC04MjI3LmpwZWc.jpeg",
+      "title": "S.P.A.C.E.",
+      "artist": "Calibro 35",
+      "year": 2015,
+      "genres": "Funk/Jazz-Funk/Jazz-Rock/Fusion/Psychedelic",
+      "votes": 1,
+      "country": "Italy",
+      "url": "https://www.discogs.com/master/911765-Calibro-35-SPACE"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 79,
+    "fields": {
+      "question": 8,
+      "image": "https://i.discogs.com/oAZSkQ2AgKXpPPoN5jsMO_-OMgJSLRICLTZ4UgNu_nk/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2NjUz/NTUtMTQyNDE3NjE0/MC00ODA0LmpwZWc.jpeg",
+      "title": "Take Me To The Mardi Gras",
+      "artist": "Bob James",
+      "year": 2015,
+      "genres": "Jazz-Funk",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/798657-Bob-James-Take-Me-To-The-Mardi-Gras"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 80,
+    "fields": {
+      "question": 8,
+      "image": "https://i.discogs.com/eqc4mlvsBOFaki2DHf7uzBvoF5GHyvnZJey36iCh53w/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4NzY1/OTMtMTQ1MDcwOTYx/MC04ODAyLmpwZWc.jpeg",
+      "title": "HITNRUN Phase Two",
+      "artist": "Prince",
+      "year": 2015,
+      "genres": "Funk/Jazz-Funk",
+      "votes": 0,
+      "country": "Unknown",
+      "url": "https://www.discogs.com/master/953258-Prince-HITNRUN-Phase-Two"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 81,
+    "fields": {
+      "question": 9,
+      "image": "https://i.discogs.com/vdAobn4MPkzxFCT0QpDvFPvxJUHMc5Eq9sOzwG7UdtE/rs:fit/g:sm/q:90/h:601/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTM4/MTgwLTE1ODQ2MDg0/ODctNzMzMS5qcGVn.jpeg",
+      "title": "Uneasy Laughter",
+      "artist": "Moaning",
+      "year": 2020,
+      "genres": "Post-Punk/Shoegaze",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/Moaning-Uneasy-Laughter/master/1700678"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 82,
+    "fields": {
+      "question": 9,
+      "image": "https://i.discogs.com/K5OrEheN_qH6FefX-MuRoWvzkgXW6Nwo--UfIBrrs3w/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MzAw/MjE1LTE2MTAzOTQ0/MTktNDQ5Mi5qcGVn.jpeg",
+      "title": "Down Through",
+      "artist": "Gleemer",
+      "year": 2020,
+      "genres": "Indie Rock/Shoegaze",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/1737427-Gleemer-Down-Through"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 83,
+    "fields": {
+      "question": 9,
+      "image": "https://i.discogs.com/NZN-yb4uM9KftIA89SwuHlKqs1ok3dyqRo-sgtHwCbc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MDM2/NDI3LTE1ODU4MzIx/MTEtMTE2Mi5qcGVn.jpeg",
+      "title": "Ringo Deathstarr",
+      "artist": "Ringo Deathstarr",
+      "year": 2020,
+      "genres": "Shoegaze",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/1710773-Ringo-Deathstarr-Ringo-Deathstarr"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 84,
+    "fields": {
+      "question": 9,
+      "image": "https://i.discogs.com/S3DvMD1jwU7ZGeD9USv8Vrm0v-BSFDU9e4maLX1GgKI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1ODI4/MTYxLTE1OTg1NDUw/MTEtMTg3Mi5qcGVn.jpeg",
+      "title": "12th House Rock",
+      "artist": "Narrow Head",
+      "year": 2020,
+      "genres": "Alternative Rock/Grunge/Shoegaze",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/1795247-Narrow-Head-12th-House-Rock"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 85,
+    "fields": {
+      "question": 9,
+      "image": "https://i.discogs.com/-al-cq-5fyrGS5zItcsCyAkkXZ_MoguNJeGn7tBcCp0/rs:fit/g:sm/q:90/h:602/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTcz/MDk4LTE2MDg1Njc4/MDMtMzE5Ny5qcGVn.jpeg",
+      "title": "Terminus",
+      "artist": "Jesu",
+      "year": 2020,
+      "genres": "Post-Metal/Shoegaze",
+      "votes": 0,
+      "country": "UK & US",
+      "url": "https://www.discogs.com/master/1843465-Jesu-Terminus"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 86,
+    "fields": {
+      "question": 9,
+      "image": "https://i.discogs.com/QXC2jAuiisAxwElvPmHvBrtbJf_OCII_H1R56L2y5sM/rs:fit/g:sm/q:90/h:586/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTYy/MzUxLTE2MDEwNTAy/NDMtNjUwNC5qcGVn.jpeg",
+      "title": "When I Die, Will I Get Better?",
+      "artist": "Svalbard (2)",
+      "year": 2020,
+      "genres": "Alternative Rock/Shoegaze/Post-Hardcore",
+      "votes": 1,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/1810506-Svalbard-When-I-Die-Will-I-Get-Better"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 87,
+    "fields": {
+      "question": 9,
+      "image": "https://i.discogs.com/m1Ub7i_mLCJNYfSsZOY13zo6VLzlMEW7EBCCP28mdeg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5OTQx/MTM2LTE2Mjk1NDg0/NTUtNTA2MC5qcGVn.jpeg",
+      "title": "10 Years Gone",
+      "artist": "Deafheaven",
+      "year": 2020,
+      "genres": "Atmospheric Black Metal/Shoegaze/Avantgarde",
+      "votes": 0,
+      "country": "Unknown",
+      "url": "https://www.discogs.com/master/1849848-Deafheaven-10-Years-Gone"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 88,
+    "fields": {
+      "question": 9,
+      "image": "https://i.discogs.com/uK3eSLeqdHP4cNGnAgCUJgr3PYs-hNKW3DAfnwjP4Eg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODEz/MzcxLTE2MDk5NzY0/MjYtMTYzMi5qcGVn.jpeg",
+      "title": "Bedroom",
+      "artist": "bdrmm",
+      "year": 2020,
+      "genres": "Dream Pop/Indie Pop/Shoegaze/Indie Rock",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/1766478-bdrmm-Bedroom"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 89,
+    "fields": {
+      "question": 9,
+      "image": "https://i.discogs.com/vz7E6ms-6HgWe-8fVxxjN_R9pz7WS6arfSEUlGmlUQM/rs:fit/g:sm/q:90/h:545/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTA2/MjU1LTE1ODY3NjI3/MzYtOTc1MS5qcGVn.jpeg",
+      "title": "D>E>A>T>H>M>E>T>A>L",
+      "artist": "Panchiko",
+      "year": 2020,
+      "genres": "Shoegaze/Lo-Fi/Glitch",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/1684911-Panchiko-DEATHMETAL"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 90,
+    "fields": {
+      "question": 9,
+      "image": "https://i.discogs.com/9s3IRkZ-ikUwnh4GouNZ4ufREMdmO1eK3JL5N1ylo0E/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MTc2/Mjc0LTE2MDQ3NTAw/MjUtODg1MC5qcGVn.jpeg",
+      "title": "The Great Dismal",
+      "artist": "Nothing (12)",
+      "year": 2020,
+      "genres": "Shoegaze/Experimental/Alternative Rock/Indie Rock/Emo",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/1827151-Nothing-The-Great-Dismal"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 91,
+    "fields": {
+      "question": 10,
+      "image": "https://i.discogs.com/BUB6TROattseY8w1j6XugoXy1J39uTlEAyeKhKn_nIQ/rs:fit/g:sm/q:90/h:625/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTM2/MDMtMTY2NTYyMTA4/OC04NTEwLmpwZWc.jpeg",
+      "title": "No Remorse",
+      "artist": "Motörhead",
+      "year": 1984,
+      "genres": "Hard Rock",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/43236-Mot%C3%B6rhead-No-Remorse"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 92,
+    "fields": {
+      "question": 10,
+      "image": "https://i.discogs.com/QYTVJvEA2XglMIhEghrhkQxTaHv_-u5DsNIQ_vsCP_M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNzQw/NTEtMTQ1NTU4NzE3/Ni0xMzM5LmpwZWc.jpeg",
+      "title": "'74 Jailbreak",
+      "artist": "AC/DC",
+      "year": 1984,
+      "genres": "Hard Rock/Blues Rock",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/8460-ACDC-74-Jailbreak"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 93,
+    "fields": {
+      "question": 10,
+      "image": "https://i.discogs.com/JNsaFxMqXiAUUYWtz8V6geWZbT3EawXadJ4pm1oRQ3Y/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NzYx/NzQtMTUyMDYxODU3/My03MzE4LmpwZWc.jpeg",
+      "title": "Animalize",
+      "artist": "Kiss",
+      "year": 1984,
+      "genres": "Glam/Hard Rock",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/42138-Kiss-Animalize"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 94,
+    "fields": {
+      "question": 10,
+      "image": "https://i.discogs.com/ivHDzV6rIP8w20NppMPzf8e79on1lokLC_3GvRMX-_w/rs:fit/g:sm/q:90/h:510/w:509/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0Njgy/NzYtMTM2NTcyNTA4/Ni03MTY3LmpwZWc.jpeg",
+      "title": "Out Of The Cellar",
+      "artist": "Ratt",
+      "year": 1984,
+      "genres": "Glam/Hard Rock/Heavy Metal",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/70769-Ratt-Out-Of-The-Cellar"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 95,
+    "fields": {
+      "question": 10,
+      "image": "https://i.discogs.com/MG1LBJFdp6jbcH-Ds3Lxo7Q0th0X5An1jQuayQvXnA4/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODA2/MTktMTQ3OTY1NjIw/Ni01ODAwLmpwZWc.jpeg",
+      "title": "Slide It In",
+      "artist": "Whitesnake",
+      "year": 1984,
+      "genres": "Hard Rock/Blues Rock/Classic Rock",
+      "votes": 1,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/11275-Whitesnake-Slide-It-In"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 96,
+    "fields": {
+      "question": 10,
+      "image": "https://i.discogs.com/6mDrkPLATLi9c9h_GRsj1u7Qe9A1OQdg1ocF0N9aJ3I/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNjMy/NzgtMTI2NzQwMzAx/NC5qcGVn.jpeg",
+      "title": "Bon Jovi",
+      "artist": "Bon Jovi",
+      "year": 1984,
+      "genres": "Hard Rock/Pop Rock",
+      "votes": 0,
+      "country": "Canada",
+      "url": "https://www.discogs.com/master/66782-Bon-Jovi-Bon-Jovi"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 97,
+    "fields": {
+      "question": 10,
+      "image": "https://i.discogs.com/Ut5KagJwLW8Xlruy560ZSQcFLy2nPjhHOYvlb4gdYBk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxOTk5/MS0xNTg5NjQ1MDUx/LTQyNTEuanBlZw.jpeg",
+      "title": "Stay Hungry",
+      "artist": "Twisted Sister",
+      "year": 1984,
+      "genres": "Heavy Metal/Hard Rock/Glam",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/68247-Twisted-Sister-Stay-Hungry"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 98,
+    "fields": {
+      "question": 10,
+      "image": "https://i.discogs.com/p0CD8AYUZ1Wo4FeL8Xngxv2e8rHVfuGdLzE06IvauUE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NDE1/MDgtMTUwNzU1MTIx/OC02NDc2LmpwZWc.jpeg",
+      "title": "Perfect Strangers",
+      "artist": "Deep Purple",
+      "year": 1984,
+      "genres": "Hard Rock/Heavy Metal/Arena Rock",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/4137-Deep-Purple-Perfect-Strangers"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 99,
+    "fields": {
+      "question": 10,
+      "image": "https://i.discogs.com/p2o5GGONaTq4jK398iU0X3KjuMfnK10_TEC_bdnKA6k/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMjg5/ODItMTM1NzgxOTE3/NS05NTU3LmpwZWc.jpeg",
+      "title": "The Works",
+      "artist": "Queen",
+      "year": 1984,
+      "genres": "Hard Rock/Pop Rock",
+      "votes": 0,
+      "country": "UK",
+      "url": "https://www.discogs.com/master/15357-Queen-The-Works"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 100,
+    "fields": {
+      "question": 10,
+      "image": "https://i.discogs.com/4b75QKNz4kXezgUqSN0J3gRJ3ZefhZC5OX6hOzcV0MM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk0OTg0/My0xMzUwOTU4NDY1/LTM4MjMuanBlZw.jpeg",
+      "title": "1984",
+      "artist": "Van Halen",
+      "year": 1984,
+      "genres": "Hard Rock",
+      "votes": 0,
+      "country": "US",
+      "url": "https://www.discogs.com/master/29419-Van-Halen-1984"
+    }
+  }
+]

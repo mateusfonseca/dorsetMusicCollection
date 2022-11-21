@@ -1,0 +1,25 @@
+{# CA1: CRUD Application #}
+
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+    <h1>About Dorset Music Collection</h1>
+    <br><br>
+    <h4>Dorset Music Collection (DMC) is a web app developed for my Continuous Assessment 1 at Dorset College BSc in
+        Computing, Year 3, Semester 1.</h4>
+    <br>
+    <h5>The backend code for this project was written in <a href="https://www.python.org/" target="_blank">Python</a>,
+        using <a href="https://www.djangoproject.com/" target="_blank">Django</a>. At the moment, the website only
+        offers one app: <a href="{% url 'polls:index' %}">Polls</a>, which allows users to create and vote in polls to
+        elect the best album of a specific music genre out of the TOP-10 most popular released in a specific year. The
+        data is pulled from <a href="https://www.discogs.com/" target="_blank">Discogs</a>* through their <a
+                href="https://www.discogs.com/developers" target="_blank">API</a>.</h5>
+    <br>
+    <h5>Visit the project's <a href="https://github.com/mateusfonseca/dorsetMusicCollection.git"
+                               target="_blank">GitHub</a>.</h5>
+    <br><br><br>
+    <h6>*This application uses Discogs’ API but is not affiliated with, sponsored or endorsed by Discogs. ‘Discogs’ is a
+        trademark of Zink Media, LLC.</h6>
+{% endblock %}
