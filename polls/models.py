@@ -1,3 +1,5 @@
+# CA1: CRUD Application
+
 import datetime
 
 from django.contrib import admin
