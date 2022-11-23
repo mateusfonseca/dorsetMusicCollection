@@ -46,6 +46,7 @@ At the core of Django's design philosophies, there lives the MVT (Model-View-Tem
 
 - **Template:** through DTL, Django Template Language, the framework makes it possible to write text files containing variables as placeholders that can be dynamically rendered as part of a web response. It also allows for the implementation of control flow statements to handle data pertaining presentation.
 
+Read more about Django's philosophies and principles [here](https://docs.djangoproject.com/en/4.1/misc/design-philosophies/).
 
 ## Part 3: Breakdown
 
