@@ -78,7 +78,7 @@ This project was developed based on the web framework Django and its MVT design 
   This class controls user requests to the associated endpoint defined in the URL pattern *.../accounts/signup*. It renders the template *registration/signup.html* and has the following methods:
     - **post:** it handles POST requests with the attached [UserCreationForm](https://docs.djangoproject.com/en/4.1/topics/forms/modelforms/#django.forms.ModelForm) and saves the newly created user to the database.
   
-      **Restrictions:** this view has no restrictions.
+    **Restrictions:** this view has no restrictions.
   - **2.2 accounts/DetailView** \#CA2  
   This class controls user requests to the associated endpoint defined in the URL pattern *.../accounts/<user_id>/detail/*. It renders the template *accounts/detail.html* and has the following methods:
     - **test_func:** it tests if the user making the request is the same whose details are being requested.
