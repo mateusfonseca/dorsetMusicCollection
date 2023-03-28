@@ -22,11 +22,15 @@ from django.views.generic import TemplateView
 
 # This file defines the accessible endpoints within the project.
 
-urlpatterns = [path('polls/', include('polls.urls')),  # endpoints within polls
-               path('admin/', admin.site.urls),  # endpoints within admin
-               path("accounts/", include("accounts.urls")),  # endpoints within accounts
-               path("accounts/", include("django.contrib.auth.urls")),
-               # endpoints within admin related to authorization
-               path('', TemplateView.as_view(template_name='home.html'), name='home'),  # website's home page
-               path('about/', TemplateView.as_view(template_name='about.html'), name='about'),  # website's about page
-               ]
+urlpatterns = [
+    path('polls/', include('polls.urls')),  # endpoints within polls
+    # changed from 'admin' to 'management' for security purposes
+    path('management/', admin.site.urls),  # endpoints within admin
+    path("accounts/", include("accounts.urls")),  # endpoints within accounts
+    path("accounts/", include("django.contrib.auth.urls")),
+    # endpoints within admin related to authorization
+    path('', TemplateView.as_view(template_name='home.html'), name='home'),  # website's home page
+    path('about/', TemplateView.as_view(template_name='about.html'), name='about'),  # website's about page
+    # website's page about the social media fingerprint exploit
+    path('exploit/', TemplateView.as_view(template_name='exploit.html'), name='exploit'),
+]

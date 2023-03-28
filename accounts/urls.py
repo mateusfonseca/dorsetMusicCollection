@@ -8,6 +8,7 @@ from .views import SignUpView, DetailView, DeleteView, UpdateEmailView
 
 app_name = 'accounts'
 urlpatterns = [
+    path("login/", LoginView.as_view(redirect_authenticated_user=True), name="login"),  # log in view
     path("signup/", SignUpView.as_view(), name="signup"),  # sign up view
     path("<int:pk>/delete/", DeleteView.as_view(), name="delete"),  # delete view of specific user
     path("<int:pk>/detail/", DetailView.as_view(), name="detail"),  # details view of specific user
