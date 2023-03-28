@@ -3,8 +3,8 @@
 **Dorset College Dublin**  
 **BSc in Science in Computing & Multimedia**  
 **Back-End Web Development - BSC30922**  
-**Year 3, Semester 1**  
-**Continuous Assessments 1 & 2**
+**Year 3, Semesters 1 & 2**  
+**Continuous Assessments 1, 2 & 3**
 
 **Lecturer name:** Geoff Wright  
 **Lecturer email:** geoff.wright@dorset.ie
@@ -13,14 +13,31 @@
 **Student Number:** 24088  
 **Student Email:** 24088@student.dorset-college.ie
 
-**Submission date:** 29 November 2022 (CA1) and 18 December 2022 (CA2)
+**Submission date:** 29 November 2022 (CA1), 18 December 2022 (CA2) and 28 March 2023 (CA3)
 
-This repository contains a "Music Collection" Django web app developed for both my CAs 1 & 2 at Dorset College BSc in Computing, Year 3, Semester 1.
+This repository contains a "Music Collection" Django web app developed for my CAs 1, 2 and 3 at Dorset College BSc in Computing, Year 3, Semesters 1 and 2.
 
 ## Part 1: Requirements and Setup
 
 **Framework:** this project requires installation of both [Python](https://www.python.org/downloads/) and [Django](https://www.djangoproject.com/download/).
 
+**Packages:** to install all the packages required by this application, as well ass their dependencies, type the following on a terminal window at the root of the project:
+
+    pip install -r requirements.txt
+
+**Environment:** create a file called ".env" at the root of the project with the following content:
+
+    SECRET_KEY='<replace with your project's secrete key>'
+    DISCOGS_USER_TOKEN='<replace with your personal Discogs user token>'
+
+**DNS configuration:** this project requires a simple DNS configuration in order to enable domain differentiation between the webapp's domain and the fake CDN's domain. Add one of the following, depending on your operating system:
+
+    # on Linux/Mac open /etc/hosts
+    # on Windows open C:\Windows\System32\drivers\etc\hosts
+    # add:
+
+    127.0.0.1     www.dorsetmusiccollection.com cdn.dmc.net
+    
 **Database engine:** it also requires access to a database through an user with enough privileges to create new tables and manipulate the data therein ([see docs](https://docs.djangoproject.com/en/4.1/ref/databases/)). The project is currently set to work with [MySQL](https://dev.mysql.com/downloads/), but switching to another supported backend should be an easy fix.
 
 **Migration:** it is necessary to tell Django to create the tables in the database from the models defined in the project. On a terminal window at the project's root directory:
@@ -31,6 +48,18 @@ This repository contains a "Music Collection" Django web app developed for both 
 **Fixture:** once the tables are created, it is possible to populate them with predefined data to start playing with the app right away. The project contains the file */fixtures/data.json*, which is a fixture, a JSON object that tells Django what data to use to populate the tables in the database. On the terminal:
 
     python manage.py loaddata data.json
+
+**Run Configuration:** in order to successfully execute the application, two instances of the Django server need to be run, one for the main website and another for the fake CDN. The file *[runSiteAndCDN](https://github.com/mateusfonseca/dorsetMusicCollection/blob/master/.idea/runConfigurations/runSiteAndCDN.xml)* can be used to tell [PyCharm](https://www.jetbrains.com/pycharm/) to do just that in a very simple way (see [Run/debug configurations](https://www.jetbrains.com/help/pycharm/run-debug-configuration.html)). Alternatively, both instances can also be run from the terminal:
+
+    # start processes and send them to background
+    python manage.py runsslserver cdn.dmc.net:9000 &
+    python manage.py runsslserver www.dorsetmusiccollection.com:8000 &
+
+    # bring each process back to foreground and end it
+    # on Linux/Mac
+    fg # then Ctrl+C
+    # on Windows
+    get-job # then Ctrl+C
 
 **API:** this app fetches its music data from the [Discogs](https://www.discogs.com/) database through their [official API](https://www.discogs.com/developers). It is free to use, but it does require user authentication in the form of a token. In this project, the file */polls/views.py*, on line 96, reads the user token string from a local file that is gitignored. In order to create more polls than the ones provided with the app via fixture, it is necessary to create a Discogs user account and request a token.
 
@@ -163,14 +192,83 @@ This project was developed based on the web framework Django and its MVT design 
   - **3.21 home.html** \#CA1  
   This HTML file gets dynamically inflated and is the response to accessing the very root of the website.
 
-## Part 4: References
+## Part 4: Testing \#CA3
+
+The application now offers unit testing modules that can be run from the command line. Both manual and automated tests are available, and it is important to note that the manual tests will halt execution and wait for user input. On a terminal window:
+
+    # to run all tests
+    python manage.py test
+    
+    # to run only the automated tests
+    python manage.py test --exclude-tag=manual
+
+    # to run only the manual tests
+    python manage.py test --tag=manual
+
+Test files breakdown:
+
+- **1. Manual Testing:**
+  - **1.1 polls.test_manual**  
+  This python file defines manual test case classes and methods that are run against the views within polls.
+- **2. Automated Testing:**
+  - **2.1 accounts.test_views**  
+  This python file defines automated test case classes and methods that are run against the views within accounts.
+  - **2.2 polls.test_views**  
+  This python file defines automated test case classes and methods that are run against the views within polls.
+  - **2.3 polls.test_models**  
+  This python file defines automated test case classes and methods that are run against the models within polls.
+
+In order to determine the percentage of the application that is currently covered by the available tests, the [Coverage.py](https://coverage.readthedocs.io/en/7.2.2/) package was used. Access the most up-to-date coverage report for this application [here](http://htmlpreview.github.io/?https://github.com/mateusfonseca/dorsetMusicCollection/blob/master/htmlcov/index.html), which indicates a 99% of total coverage.
+
+## Part 5: Security \#CA3
+
+A number of security features have been added to this project as of its latest version:
+
+- **1. Authentication:**
+  - **1.1 Media content from CDN:**  
+  To prevent the *redirect_authenticated_user* flag from being exploited by social media fingerprinting, media content, such as images and the favicon, are now serverd by a CDN (albeit a simulated one, as it is actually just another app running on a different port and accessible through a dedicated domain name).
+- **2. Protecting sensitive data:**
+  - **2.1 SECURE_SSL_REDIRECT:**  
+  Enabled to redirect all non-HTTPS requests to HTTPS.
+  - **2.2 CSRF_COOKIE_SECURE:**  
+  Enabled so that CSRF cookies are only sent with an HTTPS connection.
+  - **2.3 SESSION_COOKIE_SECURE:**  
+  Enabled so that session cookies are only sent with an HTTPS connection.
+- **3. Misconfigurations:**
+  - **3.1 Safely joining paths:**  
+  Using the method *os.path.join()* to join path strings is safer than pure string concatenation as it prevents injected malicious code from being executed.
+  - **3.2 Production site:**  
+  *DEBUG* has been disabled as it should always be in production. When enabled, it provides backend details to the browser for debugging purposes.
+  - **3.3 Allowed hosts:**  
+    Limited allowed hosts for both the main site and the fake CDN to the relevant IP addresses and domain names only.
+  - **3.4. Secrets:**  
+  Using *python-dotenv* to read secret keys from gitignored file to make sure they are kept secret.
+  - **3.5 Django admin URL:**  
+  Changed URL for admin from default *"admin"* to *"management"* to make it a less obvious target for hackers.
+  - **3.6 Django deployment check:**  
+  Command *check --deploy* returned no issues.
+- **4. Cross Site Request Forgeries (CSRF):**
+  - **4.1 CSRF token:**  
+  All POST requests are sent with an attached *csrf_token* to prevent CSRF attacks.
+- **5. HTTP Strict Transport Security:**
+  - **5.1 SECURE_HSTS_SECONDS:**  
+  Set to 2592000 so that the browser refuses to connect via an insecure connection for 30 days.
+  - **5.2 SECURE_HSTS_INCLUDE_SUBDOMAINS:**  
+  Enabled so that all subdomains are included in this configuration.
+  - **5.3 SECURE_HSTS_PRELOAD:**  
+  Enabled so that the domain can be submitted to browser preload list.
+
+## Part 6: References
 
 Conceptually, every line of code in this project was written based on official documentation:
 
-- **[Python Docs](https://docs.python.org/3/)**
-- **[Django Docs](https://docs.djangoproject.com/en/4.1/)**
-- **[MDN Web Docs](https://developer.mozilla.org/)**
-- **[Bootstrap Docs](https://getbootstrap.com/docs/5.2/getting-started/introduction/)**
+- **[Python](https://docs.python.org/3/)**
+- **[Django](https://docs.djangoproject.com/en/4.1/)**
+- **[MDN Web](https://developer.mozilla.org/)**
+- **[Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)**
+- **[Coverage.py](https://coverage.readthedocs.io/en/7.2.2/)**
+
+Robin Linus on **[social media fingerprint](https://robinlinus.github.io/socialmedia-leak/)**.
 
 Clarifying code snippets from **[W3Schools](https://www.w3schools.com/)**.
 
@@ -180,7 +278,7 @@ This app uses data from the **[Discogs API](https://www.discogs.com/developers)*
 
 *This application uses Discogs’ API but is not affiliated with, sponsored or endorsed by Discogs. ‘Discogs’ is a trademark of Zink Media, LLC.
 
-## Part 5: Copyright Disclaimer
+## Part 7: Copyright Disclaimer
 
 This project may feature content that is copyright protected. Please, keep in mind that this is a student's project and has no commercial purpose whatsoever. Having said that, if you are the owner of any content featured here and would like for it to be removed, please, contact me and I will do so promptly.
 
