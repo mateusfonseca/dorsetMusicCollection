@@ -68,8 +68,11 @@ WSGI_APPLICATION = 'dorsetMusicCollection.wsgi.application'
 #         },
 #     }
 # }
-DATABASES = {
-    'default': {'ENGINE': 'django.db.backends.mysql', 'OPTIONS': {'read_default_file': '/etc/mysql/my.cnf', }, }}
+
+# Added TEST dictionary as part of the default database, which replicates the main database structure
+# and uses it for test purposes.
+DATABASES = {'default': {'ENGINE': 'django.db.backends.mysql', 'OPTIONS': {'read_default_file': '/etc/mysql/my.cnf', },
+                         'TEST': {'NAME': 'test_dorset_music_collection'}}}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

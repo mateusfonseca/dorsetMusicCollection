@@ -14,35 +14,9 @@ from dorsetMusicCollection.settings import BASE_DIR
 from .models import Choice, Question
 
 
-# This file defines all the views in the app polls.
-# The views are classes and functions that respond to web requests with appropriate web responses.
-# They invoke the templates that will be rendered in return (if applicable) and handle any errors
-# that may arise during the handling of the requests.
-
-
-class IndexView(generic.ListView):  # poll's app home view
-    template_name = 'polls/index.html'  # template to be rendered
-    context_object_name = 'question_list'  # object that can be accessed from the template.
-
-    def get_queryset(self):  # returns list of published questions
-        return Question.objects.order_by('-pub_date')  # list ordered, most recent first
-
-
-class DetailView(generic.DetailView):  # details view of specific poll
-    model = Question  # Question instance from models
-    template_name = 'polls/detail.html'  # template to be rendered
-
-
-class ResultsView(generic.DetailView):  # results view of specific poll
-    model = Question  # Question instance from models
-    template_name = 'polls/results.html'  # template to be rendered
-
-
-@method_decorator(login_required, name='get')  # only logged-in users can access this view
-class CreateView(generic.CreateView):  # create new poll view
-    model = Question  # Question instance from models
-    template_name = 'polls/create.html'  # template to be rendered
-    fields = ['genre', 'year']  # fields to be filled in the creation form
+# get parameters used to create new poll
+# lifted out of CreatView so that it can be accessed from tests
+def get_parameters():
     genres = ['AOR', 'Abstract', 'Acid', 'Acoustic', 'African', 'Alternative Rock', 'Ambient',
               'Arena Rock', 'Art Rock', 'Audiobook', 'Avant-garde', 'Jazz Avantgarde', 'Ballad',
               'Baroque', 'Beat', 'Big Band', 'Black Metal', 'Bluegrass', 'Blues Rock', 'Bolero',
