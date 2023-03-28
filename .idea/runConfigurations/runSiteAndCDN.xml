@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="runSiteAndCDN" type="CompoundRunConfigurationType">
+    <toRun name="cdndmcHTTPS" type="Python.DjangoServer" />
+    <toRun name="dorsetMusicCollectionHTTPS" type="Python.DjangoServer" />
+    <method v="2" />
+  </configuration>
+</component>
