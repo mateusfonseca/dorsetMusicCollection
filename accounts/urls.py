@@ -1,10 +1,14 @@
 # CA2: Registration/Authentication
+# CA3: Test and Security
 
+"""
+This file defines the accessible endpoints within the internal app accounts.
+"""
+
+from django.contrib.auth.views import LoginView
 from django.urls import path
 
 from .views import SignUpView, DetailView, DeleteView, UpdateEmailView
-
-# This file defines the accessible endpoints within the internal app accounts.
 
 app_name = 'accounts'
 urlpatterns = [

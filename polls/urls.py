@@ -1,10 +1,12 @@
 # CA1: CRUD Application
 
+"""
+This file defines the accessible endpoints within the app polls.
+"""
+
 from django.urls import path
 
 from . import views
-
-# This file defines the accessible endpoints within the app polls.
 
 app_name = 'polls'
 urlpatterns = [

@@ -1,5 +1,12 @@
 # CA2: Registration/Authentication
 
+"""
+This file defines all the views in the internal app accounts.
+The views are classes and functions that respond to web requests with appropriate web responses.
+They invoke the templates that will be rendered in return (if applicable) and handle any errors
+that may arise during the handling of the requests.
+"""
+
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
@@ -9,11 +16,6 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 
-
-# This file defines all the views in the internal app accounts.
-# The views are classes and functions that respond to web requests with appropriate web responses.
-# They invoke the templates that will be rendered in return (if applicable) and handle any errors
-# that may arise during the handling of the requests.
 
 # function to test whether the user making the request is the same one whose details are being requested
 def test_func(self):

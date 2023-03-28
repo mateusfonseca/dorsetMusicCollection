@@ -1,15 +1,16 @@
 # CA1: CRUD Application
 
+"""
+This file defines the models that reflect the database's entities.
+Each class is an entity and their properties are the tables' columns.
+Instances of these classes are the database's entries, the tables' rows.
+"""
+
 import datetime
 
 from django.contrib import admin
 from django.db import models
 from django.utils import timezone
-
-
-# This file defines the models that reflect the database's entities.
-# Each class is an entity and their properties are the tables' columns.
-# Instances of these classes are the database's entries, the tables' rows.
 
 
 class Question(models.Model):  # poll's question

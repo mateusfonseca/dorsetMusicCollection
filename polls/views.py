@@ -1,6 +1,15 @@
 # CA1: CRUD Application
 # CA2: Registration/Authentication
+# CA3: Test and Security
 
+"""
+This file defines all the views in the app polls.
+The views are classes and functions that respond to web requests with appropriate web responses.
+They invoke the templates that will be rendered in return (if applicable) and handle any errors
+that may arise during the handling of the requests.
+"""
+
+import os
 from datetime import datetime
 
 from django.contrib.auth.decorators import login_required
@@ -10,7 +19,6 @@ from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.views import generic
 
-from dorsetMusicCollection.settings import BASE_DIR
 from .models import Choice, Question
 
 
@@ -50,6 +58,33 @@ def get_parameters():
               'Vocal', 'Volksmusik']  # list of available genres to choose from
     years = [year for year in range(1900, datetime.now().year + 1)]  # range of years: 1900 to present year
     years.reverse()  # most recent years first
+    return genres, years  # return parameters
+
+
+class IndexView(generic.ListView):  # poll's app home view
+    template_name = 'polls/index.html'  # template to be rendered
+    context_object_name = 'question_list'  # object that can be accessed from the template.
+
+    def get_queryset(self):  # returns list of published questions
+        return Question.objects.order_by('-pub_date')  # list ordered, most recent first
+
+
+class DetailView(generic.DetailView):  # details view of specific poll
+    model = Question  # Question instance from models
+    template_name = 'polls/detail.html'  # template to be rendered
+
+
+class ResultsView(generic.DetailView):  # results view of specific poll
+    model = Question  # Question instance from models
+    template_name = 'polls/results.html'  # template to be rendered
+
+
+@method_decorator(login_required, name='get')  # only logged-in users can access this view
+class CreateView(generic.CreateView):  # create new poll view
+    model = Question  # Question instance from models
+    template_name = 'polls/create.html'  # template to be rendered
+    fields = ['genre', 'year']  # fields to be filled in the creation form
+    genres, years = get_parameters()  # get parameters used to create new poll
 
     def get(self, request, *args, **kwargs):  # handles GET requests
         context = {'genres': self.genres, 'years': self.years}  # sends lists of genres and years to template
@@ -67,10 +102,8 @@ def get_parameters():
         # here, the token is retrieved from a git-ignored file at the root of the project.
         # even without authentication, it is still possible to query their database,
         # but some pieces of information may be missing from the results.
-        with open(BASE_DIR / 'discogs_user_token.txt', 'r') as token_file:
-            user_token = token_file.read()
         d = discogs_client.Client('dorsetMusicCollection/0.1',
-                                  user_token=user_token)
+                                  user_token=os.getenv('DISCOGS_USER_TOKEN'))
 
         # query Discogs' database with provided genre and year
         results = d.search(type='master', style=genre, year=year)
