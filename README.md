@@ -21,16 +21,16 @@ This repository contains a "Music Collection" Django web app developed for my CA
 
 **Framework:** this project requires installation of both [Python](https://www.python.org/downloads/) and [Django](https://www.djangoproject.com/download/).
 
-**Packages:** to install all the packages required by this application, as well ass their dependencies, type the following on a terminal window at the root of the project:
+**Packages:** to install all the packages required by this application, as well as their dependencies, type the following on a terminal window at the root of the project:
 
     pip install -r requirements.txt
 
-**Environment:** create a file called ".env" at the root of the project with the following content:
+**Environment:** create a file called *.env* at the root of the project with the following content:
 
     SECRET_KEY='<replace with your project's secrete key>'
     DISCOGS_USER_TOKEN='<replace with your personal Discogs user token>'
 
-**DNS configuration:** this project requires a simple DNS configuration in order to enable domain differentiation between the webapp's domain and the fake CDN's domain. Add one of the following, depending on your operating system:
+**DNS configuration:** this project requires a simple DNS configuration in order to enable domain differentiation between the webapp's domain and the fake CDN's domain. Add the following, depending on your operating system:
 
     # on Linux/Mac open /etc/hosts
     # on Windows open C:\Windows\System32\drivers\etc\hosts
@@ -38,7 +38,7 @@ This repository contains a "Music Collection" Django web app developed for my CA
 
     127.0.0.1     www.dorsetmusiccollection.com cdn.dmc.net
     
-**Database engine:** it also requires access to a database through an user with enough privileges to create new tables and manipulate the data therein ([see docs](https://docs.djangoproject.com/en/4.1/ref/databases/)). The project is currently set to work with [MySQL](https://dev.mysql.com/downloads/), but switching to another supported backend should be an easy fix.
+**Database engine:** it also requires access to a database through a user with enough privileges to create new tables and manipulate the data therein ([see docs](https://docs.djangoproject.com/en/4.1/ref/databases/)). The project is currently set to work with [MySQL](https://dev.mysql.com/downloads/), but switching to another supported backend should be an easy fix.
 
 **Migration:** it is necessary to tell Django to create the tables in the database from the models defined in the project. On a terminal window at the project's root directory:
 
@@ -61,7 +61,7 @@ This repository contains a "Music Collection" Django web app developed for my CA
     # on Windows
     get-job # then Ctrl+C
 
-**API:** this app fetches its music data from the [Discogs](https://www.discogs.com/) database through their [official API](https://www.discogs.com/developers). It is free to use, but it does require user authentication in the form of a token. In this project, the file */polls/views.py*, on line 96, reads the user token string from a local file that is gitignored. In order to create more polls than the ones provided with the app via fixture, it is necessary to create a Discogs user account and request a token.
+**API:** this app fetches its music data from the [Discogs](https://www.discogs.com/) database through their [official API](https://www.discogs.com/developers). It is free to use, but it does require user authentication in the form of a token. In this project, the file */polls/views.py*, on line 106, reads the user token string from a local file that is gitignored. In order to create more polls than the ones provided with the app via fixture, it is necessary to create a Discogs user account and request a token.
 
 ## Part 2: Background
 
